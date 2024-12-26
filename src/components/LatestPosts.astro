@@ -21,7 +21,7 @@ const latestPosts = allPosts.slice(0, 3);
 const safeGetRelativeLocaleUrl = (path: string) =>
   getRelativeLocaleUrl(currentLocale, path);
   
-const postCover = (cover) => cover.startsWith("http") ? cover : `${Astro.url.origin}${cover}`;
+const postCover = (cover: string) => cover.startsWith("http") ? cover : `${Astro.url.origin}${cover}`;
 ---
 
 <div class="mx-auto max-w-[85rem] px-4 py-4 sm:px-4 lg:px-6 lg:py-8">

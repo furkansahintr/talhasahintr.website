@@ -49,7 +49,7 @@ const relatedPosts = await getRelatedArticlesByCategory();
 const safeGetRelativeLocaleUrl = (path: string) =>
   getRelativeLocaleUrl(currentLocale, path);
 
-const postCover = (cover) => cover.startsWith("http") ? cover : `${Astro.url.origin}${cover}`;
+const postCover = (cover: string) => cover.startsWith("http") ? cover : `${Astro.url.origin}${cover}`;
 ---
 
 <div class="grid grid-cols-1 gap-4 md:grid-cols-3">
