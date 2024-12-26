@@ -21,7 +21,7 @@ switch (currentLocale) {
 }
 
 
-const { life, invest, build, more } = navData;
+const { marketing, design, trends, more } = navData;
 
 const today = new Date();
 
@@ -44,11 +44,11 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <h3
         class="text-medium font-semibold uppercase text-neutral-900 dark:text-neutral-100"
       >
-        {constants.FOOTER_LIFE}
+        {constants.FOOTER_MARKETING}
       </h3>
       <div class="mt-3 grid space-y-3 text-sm">
         {
-          life.map((item) => (
+          marketing.map((item) => (
             <FooterLinks href={safeGetRelativeLocaleUrl(item.href)}>
               {item.text}
             </FooterLinks>
@@ -61,11 +61,11 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <h3
         class="text-medium font-semibold uppercase text-neutral-900 dark:text-neutral-100"
       >
-        {constants.FOOTER_INVEST}
+        {constants.FOOTER_DESIGN}
       </h3>
       <div class="mt-3 grid space-y-3 text-sm">
         {
-          invest.map((item) => (
+          design.map((item) => (
             <FooterLinks href={safeGetRelativeLocaleUrl(item.href)}>
               {item.text}
             </FooterLinks>
@@ -78,11 +78,11 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <h3
         class="text-medium font-semibold uppercase text-neutral-900 dark:text-neutral-100"
       >
-        {constants.FOOTER_BUILD}
+        {constants.FOOTER_TRENDS}
       </h3>
       <div class="mt-3 grid space-y-3 text-sm">
         {
-          build.map((item) => (
+          trends.map((item) => (
             <FooterLinks href={safeGetRelativeLocaleUrl(item.href)}>
               {item.text}
             </FooterLinks>
@@ -117,7 +117,7 @@ const safeGetRelativeLocaleUrl = (path: string) =>
         <a
           class="text-sm text-neutral-600 dark:text-neutral-400"
           href={safeGetRelativeLocaleUrl("/")}
-          aria-label="Astroverse">{brandName} &copy; {today.getFullYear()}</a
+          aria-label="Talha">{brandName} &copy; {today.getFullYear()}</a
         >
 
         <div class="flex items-center space-x-4 text-sm">

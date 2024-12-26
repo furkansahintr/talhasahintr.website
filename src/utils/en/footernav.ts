@@ -1,23 +1,23 @@
-export const life = [
-  { text: "One", href: "#" },
-  { text: "Two", href: "#" },
-  { text: "Three", href: "#" },
+export const marketing = [
+  { text: "m1", href: "#" },
+  { text: "m2", href: "#" },
+  { text: "m3", href: "#" },
 ];
 
-export const invest = [
-  { text: "One", href: "#" },
-  { text: "Two", href: "#" },
-  { text: "Three", href: "#" },
+export const design = [
+  { text: "d1", href: "#" },
+  { text: "d2", href: "#" },
+  { text: "d3", href: "#" },
 ];
 
-export const build = [
-  { text: "One", href: "#" },
-  { text: "Two", href: "#" },
-  { text: "Three", href: "#" },
+export const trends = [
+  { text: "t1", href: "#" },
+  { text: "t2", href: "#" },
+  { text: "t3", href: "#" },
 ];
 
 export const more = [
   { text: "About", href: "/about/" },
   { text: "Author", href: "/author/" },
-  { text: "Three", href: "#" },
+  { text: "more3", href: "#" },
 ];

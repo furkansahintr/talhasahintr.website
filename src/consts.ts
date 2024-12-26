@@ -19,19 +19,19 @@ export interface LanguageConstants {
   PUBLISHED_ON: string;
   TAGS_HEADING: string;
   FOOTER_ABOUT: string;
-  FOOTER_BUILD: string;
-  FOOTER_INVEST: string;
-  FOOTER_LIFE: string;
+  FOOTER_TRENDS: string;
+  FOOTER_DESIGN: string;
+  FOOTER_MARKETING: string;
 }
 
 const trConstants: LanguageConstants = {
-  BrandName: "Talha Blog",
-  SITE_TITLE: "Talha Blog",
-  SITE_DESCRIPTION: "Görsel hikaye anlatımı için bir Astro teması.",
+  BrandName: "Blog",
+  SITE_TITLE: "Blog",
+  SITE_DESCRIPTION: "Dijital dünyada ilham, bilgi ve rehberlik sunuyoruz.",
   TAGS_TITLE: "Tüm Etiketler",
-  TAGS_DESCRIPTION: "Görsel hikaye anlatımı için bir Astro teması.",
+  TAGS_DESCRIPTION: "Dijital dünyada ilham, bilgi ve rehberlik sunuyoruz.",
   SEARCH_PAGE_TITLE: "Site İçi Arama",
-  SEARCH_PAGE_DESCRIPTION: "Talha Blog'daki tüm içerikleri arayın",
+  SEARCH_PAGE_DESCRIPTION: "Sitedeki tüm içerikleri arayın",
   GO_TO_HOMEPAGE: "Ana Sayfaya Dön",
   ERROR_404_SUBMESSAGE: "Aradığınız sayfa mevcut değil veya taşınmış.",
   ERROR_404_MESSAGE: "Sayfa Bulunamadı",
@@ -41,19 +41,19 @@ const trConstants: LanguageConstants = {
   PUBLISHED_ON: "Yayınlanma Tarihi",
   TAGS_HEADING: "Etiketler",
   FOOTER_ABOUT: "Hakkımızda",
-  FOOTER_BUILD: "Beş Element",
-  FOOTER_INVEST: "Yeryüzü Dalları",
-  FOOTER_LIFE: "Gökyüzü Dalları",
+  FOOTER_TRENDS: "Trendler",
+  FOOTER_DESIGN: "Tasarım",
+  FOOTER_MARKETING: "Pazarlama",
 };
 
 const enConstants: LanguageConstants = {
-  BrandName: "Astroverse",
-  SITE_TITLE: "Astroverse",
+  BrandName: "Talha",
+  SITE_TITLE: "Talha",
   SITE_DESCRIPTION:
-    "An Astro Theme for Visual Storytelling",
+    "We provide inspiration, knowledge, and guidance in the digital world.",
   TAGS_TITLE: "All Tags",
   TAGS_DESCRIPTION:
-    "An Astro Theme for Visual Storytelling",
+    "We provide inspiration, knowledge, and guidance in the digital world.",
   SEARCH_PAGE_TITLE: "Site Search",
   SEARCH_PAGE_DESCRIPTION: "Search all content on Astroverse",
   GO_TO_HOMEPAGE: "Go to Homepage",
@@ -65,10 +65,10 @@ const enConstants: LanguageConstants = {
   UPDATED_ON: "Updated on",
   PUBLISHED_ON: "Published on",
   TAGS_HEADING: "Tags",
-  FOOTER_ABOUT: "About Us",
-  FOOTER_BUILD: "Build",
-  FOOTER_INVEST: "Invest",
-  FOOTER_LIFE: "Life",
+  FOOTER_ABOUT: "About us",
+  FOOTER_TRENDS: "Trends",
+  FOOTER_DESIGN: "Design",
+  FOOTER_MARKETING: "Marketing",
 };
 
 

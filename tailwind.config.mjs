@@ -47,6 +47,9 @@ export default {
         transparent:
           "linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%)",
       },
+      fontSize: {
+        '2xs': '0.625rem',
+      }
     },
   },
   plugins: [require("preline/plugin"),

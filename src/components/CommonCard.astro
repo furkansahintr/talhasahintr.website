@@ -12,6 +12,7 @@ interface Props {
 const { post } = Astro.props;
 
 const currentLocale = getCurrentLocale(post.id);
+const postCover = post.data.cover.startsWith("http") ? post.data.cover : `${Astro.url.origin}${post.data.cover}`;
 ---
 
 <div
@@ -24,9 +25,9 @@ const currentLocale = getCurrentLocale(post.id);
     )}
     class="block"
   >
-    <OptimizedCover src={post.data.cover} alt={post.data.coverAlt} />
+    <OptimizedCover src={postCover} alt={post.data.coverAlt} />
     <div class="absolute bottom-0 end-0 start-0 bg-gradient-to-t p-5 md:p-6">
-      <div class="mt-16 flex items-center gap-4 text-xs text-white">
+      <div class="mt-16 flex items-center gap-4 text-2xs text-white">
         <span>{post.data.tags.join(" ")}</span>
         <FormattedDate date={post.data.pubDate} />
       </div>

@@ -33,8 +33,9 @@ const logoUrl = new URL(logoPath, siteUrl).toString();
 
 const authorName = post.data.author || "Talha Şahin";
 
-const imageUrl = post.data.cover
-  ? new URL(post.data.cover, siteUrl).toString()
+const cover = post.data.cover.startsWith("http") ? post.data.cover : `${Astro.url.origin}${post.data.cover}`
+const imageUrl = cover
+  ? new URL(cover, siteUrl).toString()
   : logoUrl;
 
 const datePublished = new Date(post.data.pubDate).toISOString();

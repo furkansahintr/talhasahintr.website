@@ -1,27 +1,13 @@
 type TagMap = Record<string, string>;
 
 const trTags: TagMap = {
-  "yansıma": "reflect",
-  "medya": "media",
-  "dolaşma": "roam",
-  "risk": "risk",
-  "strateji": "strategy",
-  "tahsis": "allocation",
-  "yenilik": "innovation",
-  "model": "model",
-  "yönetim": "management",
+  "Marka": "brand",
+  "Geleneksel Pazarlama": "traditional-marketing"
 };
 
 const enTags: TagMap = {
-  reflect: "reflect",
-  media: "media",
-  roam: "roam",
-  risk: "risk",
-  strategy: "strategy",
-  allocation: "allocation",
-  innovation: "innovation",
-  model: "model",
-  management: "management",
+  "Brand": "brand",
+  "Traditional Marketing": "traditional-marketing"
 };
 
 const tagMappings: Record<string, TagMap> = {

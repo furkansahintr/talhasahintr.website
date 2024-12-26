@@ -20,7 +20,7 @@ switch (currentLocale) {
 }
 
 
-const { life, invest, build } = navData;
+const { marketing, design, trends } = navData;
 
 const safeGetRelativeLocaleUrl = (path: string) =>
   getRelativeLocaleUrl(currentLocale, path);
@@ -35,7 +35,7 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <a
         class="inline-block flex-none rounded-xl text-xl font-semibold focus:opacity-80 focus:outline-none dark:text-white"
         href={safeGetRelativeLocaleUrl("/")}
-        aria-label="Talha Blog"
+        aria-label="Blog"
       >
         {brandName}
       </a>
@@ -99,14 +99,14 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <div
         class="mt-5 flex flex-col gap-x-0 gap-y-4 lg:mt-0 lg:flex-row lg:items-center lg:justify-center lg:gap-x-7 lg:gap-y-0"
       >
-        <HeaderLinks href={safeGetRelativeLocaleUrl(life.href)}>
-          {life.text}
+        <HeaderLinks href={safeGetRelativeLocaleUrl(marketing.href)}>
+          {marketing.text}
         </HeaderLinks>
-        <HeaderLinks href={safeGetRelativeLocaleUrl(invest.href)}>
-          {invest.text}
+        <HeaderLinks href={safeGetRelativeLocaleUrl(design.href)}>
+          {design.text}
         </HeaderLinks>
-        <HeaderLinks href={safeGetRelativeLocaleUrl(build.href)}>
-          {build.text}
+        <HeaderLinks href={safeGetRelativeLocaleUrl(trends.href)}>
+          {trends.text}
         </HeaderLinks>
       </div>
     </div>

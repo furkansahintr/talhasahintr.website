@@ -36,6 +36,8 @@ const truncatedDescription = truncateUTF8String(post.data.description, 150);
 const cleanSlug = post.slug.replace(/^[a-z]{2}\//, "");
 
 const postUrl = getRelativeLocaleUrl(currentLocale, `posts/${cleanSlug}`);
+
+const postCover = post.data.cover.startsWith("http") ? post.data.cover : `${Astro.url.origin}${post.data.cover}`;
 ---
 
 <div
@@ -44,7 +46,7 @@ const postUrl = getRelativeLocaleUrl(currentLocale, `posts/${cleanSlug}`);
   <a href={postUrl} class="block md:flex md:flex-1">
     <div class="md:w-2/3">
       <OptimizedCover
-        src={post.data.cover}
+        src={postCover}
         alt={post.data.coverAlt}
         loading="eager"
         fetchpriority="high"
@@ -54,7 +56,7 @@ const postUrl = getRelativeLocaleUrl(currentLocale, `posts/${cleanSlug}`);
       class="absolute bottom-0 end-0 start-0 bg-gradient-to-t from-black p-4 md:relative md:flex md:w-1/3 md:flex-col md:justify-start md:bg-transparent md:p-5"
     >
       <div
-        class="mt-8 flex items-center gap-4 text-xs text-white dark:text-white md:text-neutral-900"
+        class="mt-8 flex items-center gap-4 text-2xs text-white dark:text-white md:text-neutral-900"
       >
         <span>{post.data.tags.join(" ")}</span>
         <FormattedDate date={post.data.pubDate} />

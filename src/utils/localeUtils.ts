@@ -22,8 +22,8 @@ export function getCurrentLocale(pathname: string): SupportedLocale {
 
 export function getBrandName(lang: SupportedLocale): string {
   const brandNames: Record<SupportedLocale, string> = {
-    en: "Talha Blog",
-    tr: "Talha Yazıları",
+    en: "Talha",
+    tr: "Talha",
   };
   return brandNames[lang];
 }

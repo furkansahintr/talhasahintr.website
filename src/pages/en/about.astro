@@ -13,34 +13,34 @@ const description = constants.SITE_DESCRIPTION;
 const tabs = [
   {
     icon: "tabler:yoga",
-    title: "Life",
+    title: "Marketing",
     content:
-      "In the river of life, every rise and fall is a form of accumulation, and every journey is a rainbow after the storm.",
-    image: "https://images.unsplash.com/photo-1518444133586-02e3d14055c1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "About Astroverse - Life",
+      "Digital strategies, marketing trends, and effective methods to strengthen your brand. Learn how to connect with your target audience in the best possible way.",
+    image: "https://images.unsplash.com/photo-1555077292-22a4489e5897?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageAlt: "About Talha - Marketing",
   },
   {
     icon: "tabler:swimming",
-    title: "Investment",
+    title: "Design",
     content:
-      "Moving through the fog, perceiving the light of the future, turning every decision into a note of time and wisdom.",
-    image: "https://images.unsplash.com/photo-1524104841405-c92d05621b4e?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "About Astroverse - Investment",
+      "User-focused UI/UX design, creative ideas, and aesthetic solutions. Discover the perfect balance between visual appeal and functionality.",
+    image: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?q=80&w=3223&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageAlt: "About Talha - Design",
   },
   {
     icon: "tabler:run",
-    title: "Startup",
+    title: "Trends",
     content:
-      "Fighting in the waves of dreams, every difficult step is a stepping stone toward the other shore. Rising against the wind, light will eventually be seen.",
-    image: "https://images.unsplash.com/photo-1698765093181-0e07b5842614?q=80&w=2469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "About Astroverse - Startup",
+      "Rapidly evolving innovations in the digital world, future-shaping technologies, and trend analyses. Stay one step ahead in digital transformation.",
+    image: "https://images.unsplash.com/photo-1678628231211-1a68fa250b54?q=80&w=2500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    imageAlt: "About Talha - Trends",
   },
 ];
 ---
 
 <BaseLayout title={title} description={description}>
   <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
-    <h1 class="sr-only">About Astroverse</h1>
+    <h1 class="sr-only">About {constants.SITE_TITLE}</h1>
     <div class="relative p-6 md:p-16">
       <div
         class="relative z-10 lg:grid lg:grid-cols-12 lg:items-center lg:gap-16"

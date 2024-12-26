@@ -1,14 +1,14 @@
-export const life = {
-  text: "Gökyüzü Dalları",
-  href: "/category/life/1/",
+export const marketing = {
+  text: "Pazarlama",
+  href: "/category/marketing/1/",
 };
 
-export const invest = {
-  text: "Yeryüzü Dalları",
-  href: "/category/invest/1/",
+export const design = {
+  text: "Tasarım",
+  href: "/category/design/1/",
 };
 
-export const build = {
-  text: "Beş Element",
-  href: "/category/build/1/",
+export const trends = {
+  text: "Trendler",
+  href: "/category/trends/1/",
 };

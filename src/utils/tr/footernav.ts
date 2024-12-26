@@ -1,23 +1,23 @@
-export const life = [
-  { text: "Köpek Yılı", href: "#" },
-  { text: "Öküz Yılı", href: "#" },
-  { text: "Fare Yılı", href: "#" },
+export const marketing = [
+  { text: "m1", href: "#" },
+  { text: "m2", href: "#" },
+  { text: "m3", href: "#" },
 ];
 
-export const invest = [
-  { text: "Köpek Yılı", href: "#" },
-  { text: "Öküz Yılı", href: "#" },
-  { text: "Fare Yılı", href: "#" },
+export const design = [
+  { text: "d1", href: "#" },
+  { text: "d2", href: "#" },
+  { text: "d3", href: "#" },
 ];
 
-export const build = [
-  { text: "Köpek Yılı", href: "#" },
-  { text: "Öküz Yılı", href: "#" },
-  { text: "Fare Yılı", href: "#" },
+export const trends = [
+  { text: "t1", href: "#" },
+  { text: "t2", href: "#" },
+  { text: "t3", href: "#" },
 ];
 
 export const more = [
   { text: "Hakkında", href: "/about/" },
   { text: "Yazar", href: "/author/" },
-  { text: "Fare Yılı", href: "#" },
+  { text: "more3", href: "#" },
 ];
