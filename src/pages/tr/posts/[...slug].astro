@@ -14,9 +14,9 @@ import { getCurrentLocale } from "@utils/localeUtils";
 import { getEnglishTag } from "@utils/tagMapping";
 
 export const getStaticPaths = (async () => {
-  const posts = await getCollection("posts", ({ id }) => id.startsWith("zh/"));
+  const posts = await getCollection("posts", ({ id }) => id.startsWith("tr/"));
   return posts.map((post) => ({
-    params: { slug: post.slug.replace(/^zh\//, "") },
+    params: { slug: post.slug.replace(/^tr\//, "") },
     props: { post },
   }));
 }) satisfies GetStaticPaths;
@@ -57,11 +57,11 @@ const constants = getConstants(currentLocale);
       </div>
       <div class="mx-auto flex max-w-3xl flex-col items-start justify-between sm:flex-row sm:items-center">
         <div class="flex items-center mb-4 sm:mb-0">
-          <a href="/zh/author/" aria-label="Go to homepage">
+          <a href="/tr/author/" aria-label="Go to homepage">
             <img
               class="h-16 w-16 rounded-full"
               src="/dimi.avif"
-              alt={post.data.author || "Astroverse"}
+              alt={post.data.author || "Talha Blog"}
               loading="lazy"
             />
           </a>
@@ -80,10 +80,10 @@ const constants = getConstants(currentLocale);
         <div class="w-full flex justify-between items-center sm:w-auto sm:flex sm:flex-col sm:items-end">
           <div class="mb-2 flex flex-wrap justify-start prose-a:no-underline">
             {post.data.tags.map((tag) => {
-              const commonTag = getEnglishTag(tag, "zh");
+              const commonTag = getEnglishTag(tag, "tr");
               return (
                 <span class="mb-2 mr-2 rounded-full bg-neutral-200 px-3 py-1 text-sm hover:bg-neutral-500 dark:bg-neutral-600">
-                  <a href={`/zh/tags/${commonTag}/1/`}>{tag}</a>
+                  <a href={`/tr/tags/${commonTag}/1/`}>{tag}</a>
                 </span>
               );
             })}

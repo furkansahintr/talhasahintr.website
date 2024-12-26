@@ -12,8 +12,8 @@ const brandName = getBrandName(currentLocale);
 const constants = getConstants(currentLocale);
 
 switch (currentLocale) {
-  case "zh":
-    navData = await import("@utils/zh/footernav");
+  case "tr":
+    navData = await import("@utils/tr/footernav");
     break;
   default:
     navData = await import("@utils/en/footernav");

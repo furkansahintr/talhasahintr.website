@@ -9,13 +9,13 @@ import partytown from "@astrojs/partytown";
 import sitemap from "@astrojs/sitemap";
 
 export default defineConfig({
-  site: "https://verse-i18n.vercel.app",
+  site: "https://talha.sahin.biz",
   trailingSlash: "always",
   prefetch: true,
   i18n: {
-    defaultLocale: "en",
+    defaultLocale: "tr",
     locales: [
-      "zh",
+      "tr",
       "en",
     ],
     routing: {
@@ -45,10 +45,10 @@ export default defineConfig({
   integrations: [
     sitemap({
       i18n: {
-        defaultLocale: 'en',
+        defaultLocale: 'tr',
         locales: {
           en: 'en-US',
-          zh: 'zh-CN',
+          tr: 'tr-TR',
         },
       },
     }),

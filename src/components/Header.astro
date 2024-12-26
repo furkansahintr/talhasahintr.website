@@ -11,8 +11,8 @@ const brandName = getBrandName(currentLocale);
 let navData;
 
 switch (currentLocale) {
-  case "zh":
-    navData = await import("@utils/zh/headernav");
+  case "tr":
+    navData = await import("@utils/tr/headernav");
     break;
   default:
     navData = await import("@utils/en/headernav");
@@ -35,7 +35,7 @@ const safeGetRelativeLocaleUrl = (path: string) =>
       <a
         class="inline-block flex-none rounded-xl text-xl font-semibold focus:opacity-80 focus:outline-none dark:text-white"
         href={safeGetRelativeLocaleUrl("/")}
-        aria-label="Astroverse"
+        aria-label="Talha Blog"
       >
         {brandName}
       </a>

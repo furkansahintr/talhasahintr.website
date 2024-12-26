@@ -1,6 +1,6 @@
 export type SupportedLocale =
   | "en"
-  | "zh";
+  | "tr";
 
 export interface LanguageConstants {
   BrandName: string;
@@ -24,26 +24,26 @@ export interface LanguageConstants {
   FOOTER_LIFE: string;
 }
 
-const zhConstants: LanguageConstants = {
-  BrandName: "Astroverse",
-  SITE_TITLE: "Astroverse",
-  SITE_DESCRIPTION: "一款用于视觉叙事的Astro主题。",
-  TAGS_TITLE: "所有标签",
-  TAGS_DESCRIPTION: "一款用于视觉叙事的Astro主题。",
-  SEARCH_PAGE_TITLE: "站内搜索",
-  SEARCH_PAGE_DESCRIPTION: "搜索Astroverse全站内容",
-  GO_TO_HOMEPAGE: "返回首页",
-  ERROR_404_SUBMESSAGE: "您查找的页面不存在或已被移动。",
-  ERROR_404_MESSAGE: "页面未找到",
-  ERROR_404_DESCRIPTION: "404 - 页面未找到",
-  ERROR_404_TITLE: "404 - 页面未找到",
-  UPDATED_ON: "更新于",
-  PUBLISHED_ON: "发布于",
-  TAGS_HEADING: "标签",
-  FOOTER_ABOUT: "关于我们",
-  FOOTER_BUILD: "五行",
-  FOOTER_INVEST: "地支",
-  FOOTER_LIFE: "天干",
+const trConstants: LanguageConstants = {
+  BrandName: "Talha Blog",
+  SITE_TITLE: "Talha Blog",
+  SITE_DESCRIPTION: "Görsel hikaye anlatımı için bir Astro teması.",
+  TAGS_TITLE: "Tüm Etiketler",
+  TAGS_DESCRIPTION: "Görsel hikaye anlatımı için bir Astro teması.",
+  SEARCH_PAGE_TITLE: "Site İçi Arama",
+  SEARCH_PAGE_DESCRIPTION: "Talha Blog'daki tüm içerikleri arayın",
+  GO_TO_HOMEPAGE: "Ana Sayfaya Dön",
+  ERROR_404_SUBMESSAGE: "Aradığınız sayfa mevcut değil veya taşınmış.",
+  ERROR_404_MESSAGE: "Sayfa Bulunamadı",
+  ERROR_404_DESCRIPTION: "404 - Sayfa Bulunamadı",
+  ERROR_404_TITLE: "404 - Sayfa Bulunamadı",
+  UPDATED_ON: "Güncellenme Tarihi",
+  PUBLISHED_ON: "Yayınlanma Tarihi",
+  TAGS_HEADING: "Etiketler",
+  FOOTER_ABOUT: "Hakkımızda",
+  FOOTER_BUILD: "Beş Element",
+  FOOTER_INVEST: "Yeryüzü Dalları",
+  FOOTER_LIFE: "Gökyüzü Dalları",
 };
 
 const enConstants: LanguageConstants = {
@@ -74,8 +74,8 @@ const enConstants: LanguageConstants = {
 
 export function getConstants(lang: SupportedLocale): LanguageConstants {
   switch (lang) {
-    case "zh":
-      return zhConstants;
+    case "tr":
+      return trConstants;
     default:
       return enConstants;
   }

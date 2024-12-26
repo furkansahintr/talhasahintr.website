@@ -1,15 +1,15 @@
 type TagMap = Record<string, string>;
 
-const zhTags: TagMap = {
-  沉思: "reflect",
-  观阅: "media",
-  行走: "roam",
-  风险: "risk",
-  策略: "strategy",
-  配置: "allocation",
-  创新: "innovation",
-  模式: "model",
-  管理: "management",
+const trTags: TagMap = {
+  "yansıma": "reflect",
+  "medya": "media",
+  "dolaşma": "roam",
+  "risk": "risk",
+  "strateji": "strategy",
+  "tahsis": "allocation",
+  "yenilik": "innovation",
+  "model": "model",
+  "yönetim": "management",
 };
 
 const enTags: TagMap = {
@@ -25,7 +25,7 @@ const enTags: TagMap = {
 };
 
 const tagMappings: Record<string, TagMap> = {
-  zh: zhTags,
+  tr: trTags,
   en: enTags,
 };
 
@@ -38,7 +38,7 @@ function createReverseMapping(tagMap: TagMap): TagMap {
 }
 
 const reverseTagMappings: Record<string, TagMap> = {
-  zh: createReverseMapping(zhTags),
+  tr: createReverseMapping(trTags),
   en: createReverseMapping(enTags),
 };
 
@@ -63,6 +63,6 @@ export function getEnglishTag(tag: string, fromLang: string): string {
   return getTagByLanguage(tag, fromLang, "en");
 }
 
-export function getChineseTag(tag: string, fromLang: string): string {
-  return getTagByLanguage(tag, fromLang, "zh");
+export function getTurkishTag(tag: string, fromLang: string): string {
+  return getTagByLanguage(tag, fromLang, "tr");
 }

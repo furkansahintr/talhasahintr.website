@@ -1,16 +1,16 @@
 ---
-title: 这是二十多
-description: 我从此便整天的站在柜台里，专管我的职务。虽然没有什么失职，但总觉得有些单调，有些无聊。掌柜是一副凶脸孔，主顾也没有好声气，教人活泼不得；只有孔乙己到店，才可以笑几声，所以至今还记得。
+title: deneme3
+description: deneme3 - desc
 category:
-  - 地支
+  - hayat
 tags:
-  - 甲戌
-  - 乙未
-  - 丙寅
+  - tahsis
+  - model
+  - risk
 pubDate: 2023-09-06
 cover: https://images.unsplash.com/photo-1516557070061-c3d1653fa646??w=1960&h=1102&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHwwfDB8fHwy
-coverAlt: 这是二十
-author: VV
+coverAlt: cover Img
+author: Furkan
 ---
 
 ## 鲁镇的酒店

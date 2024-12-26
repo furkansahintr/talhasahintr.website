@@ -18,7 +18,7 @@ const constants = getConstants(locale);
 
 const siteUrl = Astro.site
   ? `${Astro.site.toString().replace(/\/?$/, "/")}`
-  : "https://inote.xyz/";
+  : "https://talha.sahin.biz/";
 
 const pathParts = post.slug.split("/").filter(Boolean);
 const slug = pathParts[pathParts.length - 1];
@@ -31,7 +31,7 @@ const postUrl = `${siteUrl}${locale}/posts/${slug}/`;
 const logoPath = import.meta.env.LOGO_PATH || "/logo.ico";
 const logoUrl = new URL(logoPath, siteUrl).toString();
 
-const authorName = post.data.author || "Astroverse Author";
+const authorName = post.data.author || "Talha Şahin";
 
 const imageUrl = post.data.cover
   ? new URL(post.data.cover, siteUrl).toString()
@@ -113,7 +113,7 @@ const breadcrumbs: Array<{
       name: authorName,
       image: {
         "@type": "ImageObject",
-        url: `${siteUrl}Astroverse.webp`,
+        url: `${siteUrl}profile.png`,
         width: {
           "@type": "QuantitativeValue",
           value: 400,

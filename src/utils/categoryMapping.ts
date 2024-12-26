@@ -1,9 +1,9 @@
 type CategoryMap = Record<string, string>;
 
-const zhCategories: CategoryMap = {
-  天干: "life",
-  地支: "invest",
-  五行: "build",
+const trCategories: CategoryMap = {
+  "hayat": "life",
+  "yatırım": "invest",
+  "inşaat": "build",
 };
 
 const enCategories: CategoryMap = {
@@ -15,7 +15,7 @@ const enCategories: CategoryMap = {
 
 
 const categoryMappings: Record<string, CategoryMap> = {
-  zh: zhCategories,
+  tr: trCategories,
   en: enCategories,
 };
 
@@ -28,7 +28,7 @@ function createReverseMapping(categoryMap: CategoryMap): CategoryMap {
 }
 
 const reverseCategoryMappings: Record<string, CategoryMap> = {
-  zh: createReverseMapping(zhCategories),
+  tr: createReverseMapping(trCategories),
   en: createReverseMapping(enCategories),
 };
 
@@ -53,6 +53,6 @@ export function getEnglishCategory(category: string, fromLang: string): string {
   return getCategoryByLanguage(category, fromLang, "en");
 }
 
-export function getChineseCategory(category: string, fromLang: string): string {
-  return getCategoryByLanguage(category, fromLang, "zh");
+export function getTurkishCategory(category: string, fromLang: string): string {
+  return getCategoryByLanguage(category, fromLang, "tr");
 }

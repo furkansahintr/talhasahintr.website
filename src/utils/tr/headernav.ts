@@ -1,14 +1,14 @@
 export const life = {
-  text: "天干",
+  text: "Gökyüzü Dalları",
   href: "/category/life/1/",
 };
 
 export const invest = {
-  text: "地支",
+  text: "Yeryüzü Dalları",
   href: "/category/invest/1/",
 };
 
 export const build = {
-  text: "五行",
+  text: "Beş Element",
   href: "/category/build/1/",
 };

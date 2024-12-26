@@ -1,16 +1,16 @@
 ---
-title: 听人家的背地里谈论
-description: 他身材很高大；青白脸色，皱纹间时常夹些伤痕；一部乱蓬蓬的花白的胡子
+title: deneme2
+description: deneme2 desc
 category:
-  - 地支
+  - inşaat
 tags:
-  - 甲戌
-  - 乙丑
-  - 丙子
+  - strateji
+  - yenilik
+  - model
 pubDate: 2023-09-06
 cover: https://images.unsplash.com/photo-1516557070061-c3d1653fa646??w=1960&h=1102&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmxhY2t8ZW58MHwwfDB8fHwy
-coverAlt: 听人家的背地里谈论
-author: VV
+coverAlt: cover Img
+author: Talha
 ---
 
 ## 鲁镇的酒店

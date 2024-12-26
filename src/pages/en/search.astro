@@ -2,9 +2,14 @@
 import BaseLayout from "@layouts/BaseLayout.astro";
 import { getConstants } from "@consts";
 import Pagefind from "astro-pagefind/components/Search";
-const currentLocale = "zh";
+const currentLocale = "tr";
 const constants = getConstants(currentLocale);
 ---
+<style is:global>
+  .pagefind-ui__search-input {
+    outline: none;
+  }
+</style>
 
 <BaseLayout
   title={constants.SEARCH_PAGE_TITLE}

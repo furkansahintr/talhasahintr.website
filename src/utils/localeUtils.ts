@@ -1,13 +1,13 @@
 import type { SupportedLocale } from "@consts";
 
 export const supportedLanguages = [
-  "zh",
+  "tr",
   "en",
 ];
 
 export const languageNames: Record<string, string> = {
   en: "English",
-  zh: "中文",
+  tr: "Türkçe",
 };
 
 export function getCurrentLocale(pathname: string): SupportedLocale {
@@ -15,15 +15,15 @@ export function getCurrentLocale(pathname: string): SupportedLocale {
   const locale = segments[0] as SupportedLocale;
   const supportedLocales: SupportedLocale[] = [
     "en",
-    "zh",
+    "tr",
   ];
-  return supportedLocales.includes(locale) ? locale : "en";
+  return supportedLocales.includes(locale) ? locale : "tr";
 }
 
 export function getBrandName(lang: SupportedLocale): string {
   const brandNames: Record<SupportedLocale, string> = {
-    en: "Astroverse",
-    zh: "Astroverse",
+    en: "Talha Blog",
+    tr: "Talha Yazıları",
   };
   return brandNames[lang];
 }

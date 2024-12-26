@@ -6,7 +6,7 @@ import BaseLayout from "@layouts/BaseLayout.astro";
 import PostCard from "@components/CommonCard.astro";
 import Pagination from "@components/Pagination.astro";
 import { getTagMetadata } from "@consts";
-import { getChineseTag } from "@utils/tagMapping";
+import { getTurkishTag } from "@utils/tagMapping";
 import TagsSchema from "@seo/TagsSchema.astro";
 
 type Post = CollectionEntry<"posts">;
@@ -24,10 +24,10 @@ export const getStaticPaths = (async () => {
   const uniqueTags = [...new Set(allPosts.flatMap((post) => post.data.tags))];
 
   return uniqueTags.flatMap((tag) => {
-    const chineseTag = getChineseTag(tag, "en");
+    const turkishTag = getTurkishTag(tag, "en");
     const filteredPosts = allPosts.filter(
       (post) =>
-        post.data.tags.includes(tag) || post.data.tags.includes(chineseTag),
+        post.data.tags.includes(tag) || post.data.tags.includes(turkishTag),
     );
 
     filteredPosts.sort(

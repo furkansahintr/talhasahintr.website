@@ -18,7 +18,7 @@ interface PageProps {
 
 export const getStaticPaths = (async () => {
   const allPosts = await getCollection("posts", ({ id }) =>
-    id.startsWith("zh/"),
+    id.startsWith("tr/"),
   );
   allPosts.sort(
     (a, b) =>
@@ -61,7 +61,7 @@ interface Props {
 
 const { page } = Astro.props as Props;
 
-const currentLocale = "zh";
+const currentLocale = "tr";
 const constants = getConstants(currentLocale);
 ---
 
@@ -99,11 +99,11 @@ const constants = getConstants(currentLocale);
     <Pagination
       currentPage={page.currentPage}
       lastPage={page.lastPage}
-      urlPrev={page.currentPage > 1 ? `/zh/page/${page.currentPage - 1}` : null}
+      urlPrev={page.currentPage > 1 ? `/tr/page/${page.currentPage - 1}` : null}
       urlNext={page.currentPage < page.lastPage
-        ? `/zh/page/${page.currentPage + 1}`
+        ? `/tr/page/${page.currentPage + 1}`
         : null}
-      basePath="/zh/page"
+      basePath="/tr/page"
       maxDisplayedPages={5}
     />
   </div>

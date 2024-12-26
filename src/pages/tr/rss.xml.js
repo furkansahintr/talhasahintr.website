@@ -3,10 +3,10 @@ import { getCollection } from "astro:content";
 import { getConstants } from "@consts";
 
 export async function GET(context) {
-  const currentLocale = "zh";
+  const currentLocale = "tr";
   const constants = getConstants(currentLocale);
 
-  let posts = await getCollection("posts", ({ id }) => id.startsWith("zh/"));
+  let posts = await getCollection("posts", ({ id }) => id.startsWith("tr/"));
 
   posts = posts
     .sort((a, b) => new Date(b.data.pubDate) - new Date(a.data.pubDate))
@@ -16,11 +16,11 @@ export async function GET(context) {
     title: constants.SITE_TITLE,
     description: constants.SITE_DESCRIPTION,
     site: context.site,
-    customData: `<language>zh-CN</language>`,
+    customData: `<language>tr-TR</language>`,
     items: posts.map((post) => ({
       title: post.data.title,
       description: post.data.description,
-      link: `/zh/posts/${post.slug.split("/").pop()}/`,
+      link: `/tr/posts/${post.slug.split("/").pop()}/`,
       pubDate: post.data.pubDate,
       content: post.body,
       customData: post.data.customData,

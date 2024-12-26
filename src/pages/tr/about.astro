@@ -5,7 +5,7 @@ import { Icon } from "astro-icon/components";
 import LatestPosts from "@components/LatestPosts.astro";
 import { getConstants } from "@consts";
 
-const currentLocale = "zh";
+const currentLocale = "tr";
 const constants = getConstants(currentLocale);
 
 const title = `关于 ${constants.SITE_TITLE}`;
@@ -13,32 +13,31 @@ const description = constants.SITE_DESCRIPTION;
 const tabs = [
   {
     icon: "tabler:yoga",
-    title: "天干",
-    content:
-      "AstroVerse是专为引人入胜的图文叙事而设计的Astro主题。。",
+    title: "Gökyüzü Dalları",
+    content: "Talha Blog, etkileyici görsel ve metinsel anlatımlar için tasarlanmış bir temadır.",
     image: "https://images.unsplash.com/photo-1518444133586-02e3d14055c1?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "关于Astroverse - 天干",
+    imageAlt: "Talha Blog Hakkında - Gökyüzü Dalları",
   },
   {
     icon: "tabler:swimming",
-    title: "地支",
-    content: "它无缝地融合了视觉和文字内容，赋予创作者以使用高影响力图像传递引人入胜叙事的能力。",
+    title: "Yeryüzü Dalları",
+    content: "Görsel ve metinsel içerikleri kusursuz bir şekilde birleştirir, güçlü görsellerle etkileyici hikayeler anlatma yeteneği sağlar.",
     image: "https://images.unsplash.com/photo-1524104841405-c92d05621b4e?q=80&w=2487&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "关于Astroverse - 地支",
+    imageAlt: "Talha Blog Hakkında - Yeryüzü Dalları",
   },
   {
     icon: "tabler:run",
-    title: "五行",
+    title: "Beş Element",
     content:
-      "希望通过引人注目的视觉效果和引人入胜的散文使自己的故事脱颖而出的博客作者和内容创作者，AstroVerse为创造沉浸式和具有影响力的数字体验提供了平台。",
+      "Etkileyici görseller ve hikayelerle öne çıkmak isteyen blog yazarları ve içerik oluşturucular için Talha Blog, sürükleyici ve etkili dijital deneyimler yaratmak için bir platform sağlar.",
     image: "https://images.unsplash.com/photo-1698765093181-0e07b5842614?q=80&w=2469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    imageAlt: "关于Astroverse - 五行",
+    imageAlt: "Talha Blog Hakkında - Beş Element",
   },
 ];
 ---
 
 <BaseLayout title={title} description={description}>
-  <h1 class="sr-only">关于{constants.SITE_TITLE}</h1>
+  <h1 class="sr-only">{constants.SITE_TITLE} Hakkında</h1>
   <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14">
     <div class="relative p-6 md:p-16">
       <div
@@ -119,6 +118,6 @@ const tabs = [
       </div>
     </div>
   </div>
-  <h2 class="sr-only">最新文章</h2>
+  <h2 class="sr-only">Son Makaleler</h2>
   <LatestPosts currentLocale={currentLocale} />
 </BaseLayout>

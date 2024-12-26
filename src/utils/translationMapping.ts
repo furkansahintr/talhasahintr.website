@@ -5,18 +5,18 @@ const enTranslations: TranslationMap = {
   blog: "Blog",
 };
 
-const zhTranslations: TranslationMap = {
-  homepage: "首页",
-  blog: "文章",
+const trTranslations: TranslationMap = {
+  homepage: "Ana Sayfa",
+  blog: "Makaleler",
 };
 
 const translationMappings: Record<string, TranslationMap> = {
   en: enTranslations,
-  zh: zhTranslations,
+  tr: trTranslations,
 };
 
 export function getTranslationByLanguage(key: string, locale: string): string {
   const translationMap =
-    translationMappings[locale] || translationMappings["en"];
+    translationMappings[locale] || translationMappings["tr"];
   return translationMap[key] || key;
 }

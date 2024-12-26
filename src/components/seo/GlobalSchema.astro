@@ -10,15 +10,15 @@ const constants = getConstants(currentLocale);
 
 const siteUrl = Astro.site
   ? `${Astro.site.toString().replace(/\/?$/, "/")}`
-  : "https://inote.xyz/";
+  : "https://talha.sahin.biz/";
 const siteName = constants.SITE_TITLE;
 const organizationName = `${constants.SITE_TITLE} Lab`;
 const logoPath = import.meta.env.LOGO_PATH || "/favicon.ico";
 const logoUrl = new URL(logoPath, siteUrl).toString();
 
 const socialLinks = [
-  import.meta.env.TWITTER_URL || "https://twitter.com/inotelab",
-  import.meta.env.GITHUB_URL || "https://github.com/inotelab",
+  import.meta.env.TWITTER_URL || "https://twitter.com/talhasahinbiz",
+  import.meta.env.GITHUB_URL || "https://github.com/talhasahinbiz",
 ];
 
 const siteDescription = constants.SITE_DESCRIPTION;
@@ -80,9 +80,9 @@ const breadcrumbs: Array<{
     contactPoint: {
       "@type": "ContactPoint",
       contactType: "Customer Service",
-      email: "hi@inote.xyz",
+      email: "talha@sahin.biz",
       availableLanguage: [
-        "Chinese",
+        "Turkish",
         "English",
         "French",
         "Arabic",
@@ -98,14 +98,14 @@ const breadcrumbs: Array<{
     },
     address: {
       "@type": "PostalAddress",
-      streetAddress: "1707 old fannin RD",
-      addressLocality: "Flowood",
-      addressRegion: "Mississippi",
+      streetAddress: "Uzungöl Mahallesi",
+      addressLocality: "Çaykara",
+      addressRegion: "Trabzon",
       postalCode: "39232",
-      addressCountry: "US",
+      addressCountry: "TR",
     },
-    founder: "Astroverse",
-    foundingDate: "2013-01-02",
+    founder: "Furkan Şahin",
+    foundingDate: "2025-01-01",
   }}
 />
 

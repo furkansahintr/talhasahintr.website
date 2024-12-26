@@ -5,26 +5,34 @@ import { getCollection } from "astro:content";
 import BaseLayout from "@layouts/BaseLayout.astro";
 import PostCard from "@components/CommonCard.astro";
 import Pagination from "@components/Pagination.astro";
-import { getCategoryMetadata } from "@consts";
-import CategorySchema from "@seo/CategorySchema.astro";
-import { getEnglishCategory, getCategoryByLanguage } from "@utils/categoryMapping";
+import { getTagMetadata } from "@consts";
+import { getEnglishTag, getTagByLanguage } from "@utils/tagMapping";
+import TagsSchema from "@seo/TagsSchema.astro";
+
+type Post = CollectionEntry<"posts">;
+
+interface PageProps {
+  data: Post[];
+  currentPage: number;
+  lastPage: number;
+}
 
 export const getStaticPaths = (async () => {
   const allPosts = await getCollection("posts", ({ id }) =>
-    id.startsWith("zh/"),
+    id.startsWith("tr/"),
   );
 
-  const allCommonCategories = allPosts.flatMap((post) =>
-    post.data.category.map((cat) => getEnglishCategory(cat, "zh")),
+  const allCommonTags = allPosts.flatMap((post) =>
+    post.data.tags.map((tag) => getEnglishTag(tag, "tr")),
   );
-  const uniqueCategories = [...new Set(allCommonCategories)];
+  const uniqueTags = [...new Set(allCommonTags)];
 
-  return uniqueCategories.flatMap((category) => {
+  return uniqueTags.flatMap((tag) => {
     const filteredPosts = allPosts.filter((post) => {
-      const postCommonCategories = post.data.category.map((cat) =>
-        getEnglishCategory(cat, "zh"),
+      const postCommonTags = post.data.tags.map((tag) =>
+        getEnglishTag(tag, "tr"),
       );
-      return postCommonCategories.includes(category);
+      return postCommonTags.includes(tag);
     });
 
     filteredPosts.sort(
@@ -36,7 +44,7 @@ export const getStaticPaths = (async () => {
     const totalPages = Math.ceil(filteredPosts.length / pageSize);
 
     return Array.from({ length: totalPages }, (_, index) => ({
-      params: { category, page: (index + 1).toString() },
+      params: { tag, page: (index + 1).toString() },
       props: {
         page: {
           data: filteredPosts.slice(index * pageSize, (index + 1) * pageSize),
@@ -48,32 +56,25 @@ export const getStaticPaths = (async () => {
   });
 }) satisfies GetStaticPaths;
 
-type Post = CollectionEntry<"posts">;
-
 interface Props {
-  page: {
-    data: Post[];
-    currentPage: number;
-    lastPage: number;
-  };
+  page: PageProps;
 }
 
-const { category } = Astro.params;
+const { tag } = Astro.params;
 const { page } = Astro.props as Props;
 
-if (typeof category !== "string") {
-  throw new Error("Invalid category parameter");
+if (typeof tag !== "string") {
+  throw new Error("Invalid tag parameter");
 }
 
-const currentLocale = "zh";
-const localizedCategory = getCategoryByLanguage(category, "en", currentLocale);
-const { title, description } = getCategoryMetadata(localizedCategory, currentLocale);
+const currentLocale = "tr";
+const localizedTag = getTagByLanguage(tag, "en", "tr");
+const { title, description } = getTagMetadata(localizedTag, currentLocale);
 ---
-
 <BaseLayout title={title} description={description}>
-  <CategorySchema category={localizedCategory} page={page} locale="zh" />
-  <h1 class="sr-only">分类 "{localizedCategory}" 下的所有文章</h1>
-  <h2 class="sr-only">文章列表</h2>
+  <TagsSchema tag={localizedTag} page={page} locale="tr" />
+  <h1 class="sr-only">Etiket "{localizedTag}" altındaki tüm makaleler</h1>
+  <h2 class="sr-only">Makale Listesi</h2>
 
   <div class="mx-auto max-w-4xl px-4 py-8">
     <div class="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -85,15 +86,15 @@ const { title, description } = getCategoryMetadata(localizedCategory, currentLoc
       lastPage={page.lastPage}
       urlPrev={
         page.currentPage > 1
-          ? `/zh/category/${category}/${page.currentPage - 1}`
+          ? `/tr/tags/${tag}/${page.currentPage - 1}`
           : null
       }
       urlNext={
         page.currentPage < page.lastPage
-          ? `/zh/category/${category}/${page.currentPage + 1}`
+          ? `/tr/tags/${tag}/${page.currentPage + 1}`
           : null
       }
-      basePath={`/zh/category/${category}`}
+      basePath={`/tr/tags/${tag}`}
       maxDisplayedPages={5}
     />
   </div>
