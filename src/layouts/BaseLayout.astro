@@ -12,6 +12,17 @@ const lang = getCurrentLocale(Astro.url.pathname);
 <!doctype html>
 <html lang={lang}>
   <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2PKWMSSM6B"></script>
+    <script>
+      // @ts-ignore
+      // @ts-nocheck
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2PKWMSSM6B');
+    </script>
     <!-- Google Tag Manager -->
     <script>
     // @ts-ignore
