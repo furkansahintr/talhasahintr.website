@@ -2,7 +2,7 @@
 title: 'Information About Design, Digital, and UI/UX Design'
 description: Explore the fundamentals of design, the importance of digital design, and the impact of UI/UX design on user experience. Learn the power of design!
 category:
-  - design
+  - Design
 tags:
   - Brand
   - Design

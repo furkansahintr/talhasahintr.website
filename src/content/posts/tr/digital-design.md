@@ -2,7 +2,7 @@
 title: 'Tasarım, Dijital ve UI/UX Tasarımı Hakkında Bilgiler'
 description: Tasarımın temellerini, dijital tasarımın önemini ve UI/UX tasarımının kullanıcı deneyimi üzerindeki etkilerini keşfedin. Tasarımın gücünü öğrenin!
 category:
-  - design
+  - Tasarım
 tags:
   - Marka
   - Tasarım
