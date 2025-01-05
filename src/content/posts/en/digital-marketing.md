@@ -2,7 +2,7 @@
 title: 'The Power of Digital Marketing: New Horizons for Brands'
 description: Replacing traditional marketing methods, digital strategies have revolutionized the way brands reach their target audience and engage with them.
 category:
-  - marketing
+  - Marketing
 tags:
   - Brand
   - Traditional Marketing

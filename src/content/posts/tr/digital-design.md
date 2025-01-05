@@ -1,12 +1,12 @@
 ---
-title: 'Information About Design, Digital, and UI/UX Design'
+title: 'Tasarım, Dijital ve UI/UX Tasarımı Hakkında Bilgiler'
 description: Tasarımın temellerini, dijital tasarımın önemini ve UI/UX tasarımının kullanıcı deneyimi üzerindeki etkilerini keşfedin. Tasarımın gücünü öğrenin!
 category:
-  - design
+  - Tasarım
 tags:
-  - Brand
-  - Design
-pubDate: 2025-01-05
+  - Marka
+  - Tasarım
+pubDate: '2025-01-05'
 cover: /content/information-about-design-digital-and-uıux-design.webp
 coverAlt: Design
 author: Talha Şahin

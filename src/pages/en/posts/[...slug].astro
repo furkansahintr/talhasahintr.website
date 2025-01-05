@@ -75,8 +75,7 @@ const postCover = post.data.cover.startsWith("http") ? post.data.cover : `${Astr
             </p>
             <p class="mb-1 mt-0 text-sm text-gray-400 dark:text-neutral-500">
               {constants.PUBLISHED_ON}
-              <FormattedDate date={post.data.pubDate} />, {constants.UPDATED_ON}
-              <FormattedDate date={new Date().toISOString()} />
+              <FormattedDate date={post.data.pubDate} />
             </p>
           </div>
         </div>

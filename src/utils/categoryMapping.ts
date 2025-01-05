@@ -1,15 +1,15 @@
 type CategoryMap = Record<string, string>;
 
 const trCategories: CategoryMap = {
-  "pazarlama": "marketing",
-  "tasarım": "design",
-  "trendler": "trends",
+  "Pazarlama": "marketing",
+  "Tasarım": "design",
+  "Trendler": "trends",
 };
 
 const enCategories: CategoryMap = {
-  marketing: "marketing",
-  design: "design",
-  trends: "trends",
+  "Marketing": "marketing",
+  "Design": "design",
+  "Trends": "trends",
 };
 
 

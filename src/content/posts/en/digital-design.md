@@ -2,11 +2,11 @@
 title: 'The Power of Digital Marketing: New Horizons for Brands'
 description: Explore the fundamentals of design, the importance of digital design, and the impact of UI/UX design on user experience. Learn the power of design!
 category:
-  - design
+  - Design
 tags:
   - Brand
   - Design
-pubDate: 2025-01-05
+pubDate: '2025-01-05'
 cover: /content/information-about-design-digital-and-uıux-design.webp
 coverAlt: Design
 author: Talha Şahin
