@@ -6,7 +6,7 @@ category:
 tags:
   - Brand
   - Design
-pubDate: '2025-01-05'
+pubDate: 2025-01-05
 cover: /content/information-about-design-digital-and-uıux-design.webp
 coverAlt: Design
 author: Talha Şahin
