@@ -7,7 +7,7 @@ tags:
   - Brand
   - Design
 pubDate: 2025-01-05
-cover: /content/dijital-pazarlama.webp
+cover: /content/information-about-design-digital-and-uıux-design.webp
 coverAlt: Design
 author: Talha Şahin
 ---
