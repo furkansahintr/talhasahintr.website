@@ -2,12 +2,14 @@ type TagMap = Record<string, string>;
 
 const trTags: TagMap = {
   "Marka": "brand",
-  "Geleneksel Pazarlama": "traditional-marketing"
+  "Geleneksel Pazarlama": "traditional-marketing",
+  "Tasarım": "design"
 };
 
 const enTags: TagMap = {
   "Brand": "brand",
-  "Traditional Marketing": "traditional-marketing"
+  "Traditional Marketing": "traditional-marketing",
+  "Design": "design"
 };
 
 const tagMappings: Record<string, TagMap> = {
