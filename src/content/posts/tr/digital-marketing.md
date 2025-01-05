@@ -2,7 +2,7 @@
 title: 'Dijital Pazarlamanın Gücü: Markalar için Yeni Ufuklar'
 description: Geleneksel pazarlama yöntemlerinin yerini alan dijital stratejiler, markaların hedef kitlelerine ulaşma ve onlarla etkileşim kurma biçimlerini kökten değiştirdi.
 category:
-  - Pazarlama
+  - marketing
 tags:
   - Marka
   - Geleneksel Pazarlama
